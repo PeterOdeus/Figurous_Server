@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>GetOrMakeUserAccountServlet</servlet-name>
+		<servlet-class>figurous.server.service.GetOrMakeUserAccountServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>GetFigurousUserServlet</servlet-name>
+		<servlet-class>figurous.server.service.GetFigurousUserServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AddClothingServlet</servlet-name>
+		<servlet-class>figurous.server.service.AddClothingServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>UpdateClothingServlet</servlet-name>
+		<servlet-class>figurous.server.service.UpdateClothingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetOrMakeUserAccountServlet</servlet-name>
+		<url-pattern>/GetCurrentUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>GetFigurousUserServlet</servlet-name>
+		<url-pattern>/GetFigurousUser</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddClothingServlet</servlet-name>
+		<url-pattern>/AddClothing</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>UpdateClothingServlet</servlet-name>
+		<url-pattern>/UpdateClothing</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>figurous.html</welcome-file>
+	</welcome-file-list>
+</web-app>
