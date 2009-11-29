@@ -20,6 +20,14 @@ import figurous.server.persistence.PMF;
 public class GetFigurousUserServlet extends GetOrMakeUserAccountServlet{
 	
 	private static final Logger log = Logger.getLogger(GetFigurousUserServlet.class.getName());
+	
+	@Override
+	public void doPost(HttpServletRequest req, HttpServletResponse resp)
+			throws IOException {
+		resp.sendError(405);//Method not allowed
+		return;
+	}
+	
 	@Override
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
