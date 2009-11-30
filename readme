@@ -1,1 +1,4 @@
 curl --cookie ahlogincookie=test@example.com:false:18580476422013912411 -d dummy=hej -i http://localhost:8080/GetCurrentUser
+
+
+Use cookie test@example.com:false:18580476422013912412 to access demo user in db files next ro this readme.
